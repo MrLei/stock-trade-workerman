@@ -1,0 +1,92 @@
+2016-06-22 11:29:53 Workerman[start.php] -d 
+2016-06-22 11:29:53 Workerman[start.php] not run
+2016-06-22 11:30:01 Workerman[start.php] start.php 
+2016-06-22 11:30:01 Workerman[start.php] not run
+2016-06-22 11:30:43 Workerman[start.php] start in DAEMON mode
+2016-06-22 12:37:25 Workerman[start.php] stop 
+2016-06-22 12:37:25 Workerman[start.php] is stoping ...
+2016-06-22 12:37:25 Workerman[start.php] Stopping ...
+2016-06-22 12:37:25 Workerman[start.php] has been stopped
+2016-06-22 12:37:25 Workerman[start.php] stop success
+2016-06-22 12:38:52 Workerman[start.php] start in DAEMON mode
+2016-06-22 14:45:17 Workerman[start.php] reload 
+2016-06-22 14:45:17 Workerman[start.php] reload
+2016-06-22 14:45:17 Workerman[start.php] reloading
+2016-06-22 14:45:57 Workerman[start.php] stop 
+2016-06-22 14:45:57 Workerman[start.php] is stoping ...
+2016-06-22 14:45:57 Workerman[start.php] Stopping ...
+2016-06-22 14:45:57 Workerman[start.php] has been stopped
+2016-06-22 14:45:57 Workerman[start.php] stop success
+2016-06-22 14:46:01 Workerman[start.php] start in DEBUG mode
+2016-06-22 14:47:20 Workerman[start.php] Stopping ...
+2016-06-22 14:47:20 Workerman[start.php] has been stopped
+2016-06-22 14:47:21 Workerman[start.php] start in DEBUG mode
+2016-06-22 14:55:57 Workerman[start.php] Stopping ...
+2016-06-22 14:55:57 Workerman[start.php] has been stopped
+2016-06-22 14:55:58 Workerman[start.php] start in DEBUG mode
+2016-06-22 14:57:28 Workerman[start.php] Stopping ...
+2016-06-22 14:57:28 Workerman[start.php] has been stopped
+2016-06-22 14:57:37 Workerman[start.php] start.php 
+2016-06-22 14:57:37 Workerman[start.php] not run
+2016-06-22 14:57:42 Workerman[start.php] start in DEBUG mode
+2016-06-22 14:59:01 Workerman[start.php] Stopping ...
+2016-06-22 14:59:01 Workerman[start.php] has been stopped
+2016-06-22 14:59:02 Workerman[start.php] start in DEBUG mode
+2016-06-22 15:00:46 Workerman[start.php] Stopping ...
+2016-06-22 15:00:46 Workerman[start.php] has been stopped
+2016-06-22 15:00:46 Workerman[start.php] start in DEBUG mode
+2016-06-22 15:13:47 WORKER EXIT UNEXPECTED E_ERROR Undefined class constant 'instance' in /Users/caizixin/phpstorm/gpb_sdk/Applications/T2Gateway/Lib/T2Connection.php on line 17
+2016-06-22 15:13:47 worker[YourAppBusinessWorker:71722] exit with status 65280
+2016-06-22 15:14:23 Workerman[start.php] Stopping ...
+2016-06-22 15:14:23 Workerman[start.php] has been stopped
+2016-06-22 15:14:24 Workerman[start.php] start in DEBUG mode
+2016-06-22 15:14:42 WORKER EXIT UNEXPECTED E_ERROR Call to undefined method Applications\T2Gateway\Lib\T2Connection::p_connect() in /Users/caizixin/phpstorm/gpb_sdk/Applications/T2Gateway/Lib/Request.php on line 17
+2016-06-22 15:14:42 worker[YourAppBusinessWorker:79872] exit with status 65280
+2016-06-22 15:15:45 Workerman[start.php] Stopping ...
+2016-06-22 15:15:45 Workerman[start.php] has been stopped
+2016-06-22 15:15:46 Workerman[start.php] start in DEBUG mode
+2016-06-22 15:17:10 WORKER EXIT UNEXPECTED E_ERROR Class 'T2Connection' not found in /Users/caizixin/phpstorm/gpb_sdk/Applications/T2Gateway/Lib/T2Connection.php on line 29
+2016-06-22 15:17:10 worker[YourAppBusinessWorker:80706] exit with status 65280
+2016-06-22 17:51:04 Workerman[start.php] Stopping ...
+2016-06-22 17:51:04 Workerman[start.php] has been stopped
+2016-06-22 17:51:06 Workerman[start.php] start in DEBUG mode
+2016-06-22 17:51:49 Workerman[start.php] Stopping ...
+2016-06-22 17:51:49 Workerman[start.php] has been stopped
+2016-06-22 17:51:49 Workerman[start.php] start in DEBUG mode
+2016-06-22 17:53:17 Workerman[start.php] Stopping ...
+2016-06-22 17:53:17 Workerman[start.php] has been stopped
+2016-06-22 17:53:18 Workerman[start.php] start in DEBUG mode
+2016-06-22 17:53:48 Workerman[start.php] Stopping ...
+2016-06-22 17:53:48 Workerman[start.php] has been stopped
+2016-06-22 17:53:49 Workerman[start.php] start in DEBUG mode
+2016-06-22 18:04:16 Workerman[start.php] Stopping ...
+2016-06-22 18:04:16 Workerman[start.php] has been stopped
+2016-06-22 18:04:17 Workerman[start.php] start in DEBUG mode
+2016-06-22 18:05:50 Workerman[start.php] Stopping ...
+2016-06-22 18:05:50 Workerman[start.php] has been stopped
+2016-06-22 18:05:50 Workerman[start.php] start in DEBUG mode
+2016-06-22 18:06:46 Workerman[start.php] Stopping ...
+2016-06-22 18:06:46 Workerman[start.php] has been stopped
+2016-06-22 18:06:47 Workerman[start.php] start in DEBUG mode
+2016-06-22 18:54:45 Workerman[start.php] Stopping ...
+2016-06-22 18:54:45 Workerman[start.php] has been stopped
+2016-06-22 18:54:46 Workerman[start.php] start in DEBUG mode
+2016-06-22 18:56:04 Workerman[start.php] Stopping ...
+2016-06-22 18:56:04 Workerman[start.php] has been stopped
+2016-06-22 18:56:05 Workerman[start.php] start in DEBUG mode
+2016-06-22 18:56:12 WORKER EXIT UNEXPECTED E_ERROR Class 'T2Connection' not found in /Users/caizixin/phpstorm/gpb_sdk/Applications/T2Gateway/Lib/T2Connection.php on line 27
+2016-06-22 18:56:12 worker[YourAppBusinessWorker:16148] exit with status 65280
+2016-06-22 18:56:24 Workerman[start.php] Stopping ...
+2016-06-22 18:56:24 Workerman[start.php] has been stopped
+2016-06-22 19:31:54 Workerman[start.php] start in DEBUG mode
+2016-06-22 19:31:56 Workerman[start.php] Stopping ...
+2016-06-22 19:31:56 Workerman[start.php] has been stopped
+2016-09-28 14:25:31 Workerman[start.php] start in DEBUG mode
+2016-09-28 14:25:51 WORKER EXIT UNEXPECTED E_ERROR Class 'T2Connection' not found in /Users/caizixin/phpstorm/gpb_sdk/Applications/T2Gateway/Lib/SingleT2Connection.php on line 35
+2016-09-28 14:25:51 worker[YourAppBusinessWorker:21662] exit with status 65280
+2016-09-28 14:26:17 Workerman[start.php] Stopping ...
+2016-09-28 14:26:17 Workerman[start.php] has been stopped
+2016-09-28 14:30:11 Workerman[start.php] start in DEBUG mode
+2016-09-28 14:30:27 worker[YourAppBusinessWorker:23884] exit with status 11
+2016-09-28 14:32:53 Workerman[start.php] Stopping ...
+2016-09-28 14:32:53 Workerman[start.php] has been stopped

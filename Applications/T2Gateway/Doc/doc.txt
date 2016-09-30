@@ -1,0 +1,206 @@
+Applications\T2Gateway\Info\BankInfo
+字段 含义 备注
+open_date 开户日期
+fund_account 资产账户
+money_type 币种类别
+bank_no 银行代码
+bank_name 银行名称
+bank_account 银行账号
+bkaccount_status 银行账户状态
+
+Applications\T2Gateway\Info\BankTransferInfo
+字段 含义 备注
+init_date 交易日期
+bank_no 银行代码
+bank_name 银行名称
+entrust_no 委托编号
+business_type 业务类型
+money_type 币种类别
+occur_balance 发生金额
+bktrans_status 请求状态
+position_str 定位串
+
+Applications\T2Gateway\Info\CanCancelEntrustInfo
+字段 含义 备注
+entrust_no 委托编号
+stock_account 证券账号
+stock_code 证券代码
+exchange_type 交易类别
+stock_name 证券名称
+entrust_bs 买卖方向
+entrust_price 委托价格
+entrust_amount 委托数量
+business_price 成交价格
+business_amount 成交数量
+report_no 申请编号
+report_time 申报时间
+entrust_date 委托日期
+entrust_time 委托时间
+entrust_type 委托类别
+entrust_status 委托状态
+entrust_prop 委托属性
+cancel_info 废单原因
+position_str 定位串
+
+Applications\T2Gateway\Info\DeliveryInfo
+字段 含义 备注
+init_date 交易日期
+serial_no 流水序号
+entrust_no 委托编号
+stock_account 证券账号
+stock_code 证券代码
+exchange_type 交易类别
+stock_name 证券名称
+entrust_bs 买卖方向
+business_price 成交价格
+business_time 成交时间
+business_status 业务状态
+business_amount 成交数量
+occur_amount 发生数量
+occur_balance 发生金额
+fare0 佣金
+fare1 印花税
+fare2 过户费
+fare3 费用3
+farex 费用x
+position_str 定位串
+
+Applications\T2Gateway\Info\EnableBuyInfo
+字段 含义 备注
+enable_amount 可用数量
+store_unit 存放单位
+enable_buy_amount 可买数量
+high_amount 交易最高数量
+
+Applications\T2Gateway\Info\EntrustInfo
+字段 含义 备注
+entrust_no 委托编号
+stock_account 证券账号
+stock_code 证券代码
+exchange_type 交易类别
+stock_name 证券名称
+entrust_bs 买卖方向
+entrust_price 委托价格
+entrust_amount 委托数量
+business_price 成交价格
+business_amount 成交数量
+entrust_date 委托日期
+entrust_time 委托时间
+entrust_type 委托类别
+entrust_status 委托状态
+withdraw_amount 撤单数量
+position_str 定位串
+
+Applications\T2Gateway\Info\FundInfo
+字段 含义 备注
+init_date 交易日期
+serial_no 流水序号
+entrust_no 委托编号
+business_flag 业务标志
+business_name 业务名称
+occur_balance 发生金额
+post_balance 后资金额
+position_str 定位串
+money_type 币种类别
+remark 备注
+fund_account 资产账户
+bank_no 银行代码
+bank_name 银行名称
+
+Applications\T2Gateway\Info\QuotationInfo
+字段 含义 备注
+last_price 最新价
+open_price 开盘价
+close_price 昨收盘
+high_price 最高价
+low_price 最低价
+buy_price1 申买价一
+buy_price2 申买价二
+buy_price3 申买价三
+buy_price4 申买价四
+buy_price5 申买价五
+sale_price1 申卖价一
+sale_price2 申卖价二
+sale_price3 申卖价三
+sale_price4 申卖价四
+sale_price5 申卖价五
+buy_amount1 申买量一
+buy_amount2 申买量二
+buy_amount3 申买量三
+buy_amount4 申买量四
+buy_amount5 申买量五
+sale_amount1 申卖量一
+sale_amount2 申卖量二
+sale_amount3 申卖量三
+sale_amount4 申卖量四
+sale_amount5 申卖量五
+stock_name 证券名称
+stock_interest 应记利息
+
+Applications\T2Gateway\Info\StockHoldInfo
+字段 含义 备注
+stock_code 证券代码
+exchange_type 交易类别
+stock_name 证券名称
+hold_amount 持有数量
+current_amount 当前数量
+enable_amount 可用数量
+frozen_amount 冻结数量
+last_price 最新价
+cost_price 成本价
+market_value 证券市值
+income_balance 盈亏金额
+delist_flag 退市标志
+profit_ratio 盈亏比例(%)
+position_str 定位串
+
+Applications\T2Gateway\Info\StockInfo
+字段 含义 备注
+stock_code 证券代码
+exchange_type 交易类别
+stock_name 证券名称
+buy_unit 买入单位
+up_price 上限价
+down_price 下限价
+high_amount 交易最高数量
+delist_flag 退市标志
+low_balance 交易最少金额
+high_balance 交易最高金额
+
+Applications\T2Gateway\Info\TradeInfo
+字段 含义 备注
+init_date 交易日期
+serial_no 流水序号
+entrust_no 委托编号
+stock_account 证券账号
+stock_code 证券代码
+exchange_type 交易类别
+stock_name 证券名称
+entrust_bs 买卖方向
+business_price 成交价格
+business_time 成交时间
+business_status 业务状态
+business_amount 成交数量
+occur_amount 发生数量
+occur_balance 发生金额
+fare0 佣金
+fare1 印花税
+fare2 过户费
+fare3 费用3
+farex 费用x
+position_str 定位串
+
+Applications\T2Gateway\Info\UserFundInfo
+字段 含义 备注
+enable_balance 可用资金
+frozen_balance 冻结资金
+fetch_balance 可取金额
+market_value 证券市值
+asset_balance 资产值
+income_balance 盈亏金额
+
+Applications\T2Gateway\Info\UserInfo
+字段 含义 备注
+client_id 客户编号
+client_name 客户姓名
+user_token 用户口令

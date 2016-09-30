@@ -1,0 +1,23 @@
+{"route":"user/login", "fund_account":"70960283", "password":"111111"}
+{"route":"user/login", "fund_account":"70001172", "password":"111111"}
+{"route":"user/logout"}
+{"route":"trade/stock-query","stock_id":"000001","exchange_type":"0"}
+{"route":"trade/stock-info","stock_id":"600036","exchange_type":"1"}
+{"route":"trade/trade-count","stock_id":"600036","exchange_type":"1","entrust_price":"18.5"}
+{"route":"trade/stock-ensure","stock_id":"000001"}
+{"route":"trade/sell-ensure","stock_id":"600036"}
+{"route":"trade/entrust","stock_id":"000001","exchange_type":"2","entrust_amount":"1000","entrust_price":"9.3","entrust_bs":"1","entrust_prop":"0"}
+{"route":"query/fund"}
+{"route":"query/today-entrust"}
+{"route":"query/can-cancel-entrust"}
+{"route":"query/history-entrust"}
+{"route":"query/today-trade"}
+{"route":"query/history-trade"}
+{"route":"query/delivery-history","start_date":"20150505","end_date":"20160724"}
+{"route":"query/fund-history","start_date":"20150505","end_date":"20160724"}
+{"route":"bank/info"}
+{"route":"bank/fund-info"}
+{"route":"bank/balance","bank_no":"1"}
+{"route":"bank/transfer","bank_no":"1","transfer_direction":"2","occur_balance":"10000"}
+{"route":"bank/transfer-history","bank_no":"1","start_date":"20150505","end_date":"20160724"}
+{"route":"trade/polling-entrust-no","bank_no":"1","entrust_no":"3"}
