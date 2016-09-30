@@ -1,5 +1,5 @@
-{"route":"user/login", "fund_account":"70960283", "password":"111111"}
-{"route":"user/login", "fund_account":"70001172", "password":"111111"}
+{"route":"user/login", "fund_account":"", "password":""}
+{"route":"user/login", "fund_account":"", "password":""}
 {"route":"user/logout"}
 {"route":"trade/stock-query","stock_id":"000001","exchange_type":"0"}
 {"route":"trade/stock-info","stock_id":"600036","exchange_type":"1"}
