@@ -51,11 +51,11 @@ class Events
 		$dir = __DIR__. '/../../log/';
 		$infoLogger = new Logger('access');
 		$stream = new StreamHandler($dir. 'access.log', Logger::INFO);
-		$infoLogger->pushHandler(new BufferHandler($stream, 10, Logger::INFO, true, true));
+		$infoLogger->pushHandler(new BufferHandler($stream, 1, Logger::INFO, true, true));
 
 		$errLogger = new Logger('error');
 		$stream = new StreamHandler($dir. 'error.log', Logger::ERROR);
-		$errLogger->pushHandler(new BufferHandler($stream, 10, Logger::ERROR, true, true));
+		$errLogger->pushHandler(new BufferHandler($stream, 1, Logger::ERROR, true, true));
 
 		Registry::addLogger($infoLogger, 'access');
 		Registry::addLogger($errLogger, 'error');
@@ -71,6 +71,8 @@ class Events
 		KeepAlive::addClient($client_id);
 		$result['errcode'] = 0;
 		Response::output($result);
+
+		Registry::getInstance('access')->addInfo("connected", ['clinet_id' => $client_id]);
 	}
 
 	/**
@@ -95,7 +97,9 @@ class Events
 		{
 			Context::$start_time = microtime(true);
 			$log = Registry::getInstance('access');
-			$log->addInfo("request start", ['route' => $route]);
+			$log->addInfo("request start", $message);
+
+			Context::$param_sign = isset($message['param_sign']) ? $message['param_sign'] : null;
 
 			KeepAlive::updateClient($client_id);
 			Router::dispatchRouter($route, $message);

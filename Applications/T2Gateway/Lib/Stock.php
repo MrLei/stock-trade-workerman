@@ -11,6 +11,7 @@ namespace Applications\T2Gateway\Lib;
 
 use Applications\T2Gateway\Info\EntrustInfo;
 use Applications\T2Gateway\Info\StockHoldInfo;
+use Applications\T2Gateway\Info\TodayTradeInfo;
 use Applications\T2Gateway\Info\TradeInfo;
 use Applications\T2Gateway\Info\UserFundInfo;
 
@@ -25,16 +26,7 @@ class Stock
 		$hold_list = [];
 		foreach($user_hold as $hold)
 		{
-			if($hold['profit_ratio'] > 0)
-			{
-				$total_income_balance += $hold['income_balance'];
-			}
-
-			if($hold['profit_ratio'] < 0)
-			{
-				$total_income_balance -= $hold['income_balance'];
-			}
-
+			$total_income_balance += $hold['income_balance'];
 			$hold_list[] = StockHoldInfo::getStructInfo($hold);
 		}
 		$user_fund['income_balance'] = $total_income_balance;
@@ -47,7 +39,7 @@ class Stock
 
 	public static function todayEntrust($position_str, $request_num)
 	{
-		$entrust_list = Request::entrustList(1, 0, 0, 0, $position_str, $request_num);
+		$entrust_list = Request::entrustList(1, 0, 1, 0, $position_str, $request_num);
 
 		$result = [];
 		foreach($entrust_list as $entrust)
@@ -72,14 +64,14 @@ class Stock
 	}
 
 
-	public static function todayTrade($position_str, $request_num)
+	public static function todayTrade($query_type, $query_mode, $position_str, $request_num)
 	{
-		$trade_list = Request::tradeList(1, 0, 0, $position_str, $request_num);
+		$trade_list = Request::tradeList(0, $query_type, $query_mode, $position_str, $request_num);
 
 		$result = [];
 		foreach($trade_list as $entrust)
 		{
-			$result[] = TradeInfo::getStructInfo($entrust);
+			$result[] = TodayTradeInfo::getStructInfo($entrust);
 		}
 
 		return $result;

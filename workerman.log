@@ -90,3 +90,31 @@
 2016-09-28 14:30:27 worker[YourAppBusinessWorker:23884] exit with status 11
 2016-09-28 14:32:53 Workerman[start.php] Stopping ...
 2016-09-28 14:32:53 Workerman[start.php] has been stopped
+2016-10-09 17:06:18 Workerman[start.php] start in DEBUG mode
+2016-10-09 17:46:15 Workerman[start.php] Stopping ...
+2016-10-09 17:46:15 Workerman[start.php] has been stopped
+2016-10-09 17:46:27 Workerman[start.php] start in DAEMON mode
+2016-10-09 17:49:08 Workerman[start.php] start in DEBUG mode
+2016-10-09 17:49:08 Workerman[start.php] already running
+2016-10-09 17:49:12 Workerman[start.php] stop 
+2016-10-09 17:49:12 Workerman[start.php] is stoping ...
+2016-10-09 17:49:12 Workerman[start.php] Stopping ...
+2016-10-09 17:49:12 Workerman[start.php] has been stopped
+2016-10-09 17:49:12 Workerman[start.php] stop success
+2016-10-09 17:49:13 Workerman[start.php] start in DEBUG mode
+2016-10-09 17:49:25 Workerman[start.php] Stopping ...
+2016-10-09 17:49:25 Workerman[start.php] has been stopped
+2016-10-09 17:49:37 Workerman[start.php] start in DEBUG mode
+2016-10-10 12:01:18 Workerman[start.php] start in DAEMON mode
+2016-11-01 17:40:03 Workerman[start.php] start in DEBUG mode
+2016-11-01 17:41:03 Workerman[start.php] start in DEBUG mode
+2016-11-01 17:46:29 WORKER EXIT UNEXPECTED E_ERROR Class 'T2Connection' not found in /Users/caizixin/phpstorm/gpb_sdk/Applications/T2Gateway/Lib/SingleT2Connection.php on line 35
+2016-11-01 17:46:29 worker[YourAppBusinessWorker:16364] exit with status 65280
+2016-11-01 17:48:01 WORKER EXIT UNEXPECTED E_ERROR Class 'T2Connection' not found in /Users/caizixin/phpstorm/gpb_sdk/Applications/T2Gateway/Lib/SingleT2Connection.php on line 35
+2016-11-01 17:48:01 worker[YourAppBusinessWorker:16366] exit with status 65280
+2016-11-01 17:48:11 Workerman[start.php] Stopping ...
+2016-11-01 17:48:11 Workerman[start.php] has been stopped
+2016-11-01 17:54:31 Workerman[start.php] start in DEBUG mode
+2016-11-01 17:54:35 worker[YourAppBusinessWorker:25312] exit with status 11
+2016-11-01 17:56:35 Workerman[start.php] Stopping ...
+2016-11-01 17:56:35 Workerman[start.php] has been stopped

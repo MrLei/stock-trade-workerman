@@ -94,9 +94,11 @@ class QueryController
 		User::checkLogin();
 
 		$start_date = Param::get($param, 'start_date');
-		$end_date = Param::get($param, 'end_data');
+		$end_date = Param::get($param, 'end_date');
 		$position_str = Param::get($param, 'position_str', '');
 		$request_num = Param::get($param, 'request_num', 10);
+		var_dump($param, $end_date);
+
 
 		if(empty($end_date))
 		{
@@ -124,10 +126,12 @@ class QueryController
 	{
 		User::checkLogin();
 
+		$query_type = Param::get($param, 'query_type', '1');
+		$query_mode = Param::get($param, 'query_mode', '0');
 		$position_str = Param::get($param, 'position_str', '');
 		$request_num = Param::get($param, 'request_num', 10);
 
-		$trade_list = Stock::todayTrade($position_str, $request_num);
+		$trade_list = Stock::todayTrade($query_type, $query_mode, $position_str, $request_num);
 
 		$result['errcode'] = SUCCESS;
 		$result['trade_list'] = $trade_list;
@@ -145,7 +149,7 @@ class QueryController
 		User::checkLogin();
 
 		$start_date = Param::get($param, 'start_date');
-		$end_date = Param::get($param, 'end_data');
+		$end_date = Param::get($param, 'end_date');
 		$position_str = Param::get($param, 'position_str', '');
 		$request_num = Param::get($param, 'request_num', 10);
 
@@ -176,7 +180,7 @@ class QueryController
 		User::checkLogin();
 
 		$start_date = Param::get($param, 'start_date');
-		$end_date = Param::get($param, 'end_data');
+		$end_date = Param::get($param, 'end_date');
 		$position_str = Param::get($param, 'position_str', '');
 		$request_num = Param::get($param, 'request_num', 10);
 
@@ -207,7 +211,7 @@ class QueryController
 		User::checkLogin();
 
 		$start_date = Param::get($param, 'start_date');
-		$end_date = Param::get($param, 'end_data');
+		$end_date = Param::get($param, 'end_date');
 		$position_str = Param::get($param, 'position_str', '');
 		$request_num = Param::get($param, 'request_num', 10);
 

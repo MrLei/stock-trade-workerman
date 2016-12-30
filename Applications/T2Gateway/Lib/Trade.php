@@ -17,13 +17,22 @@ use Applications\T2Gateway\Info\StockInfo;
 
 class Trade
 {
-	public static function ensure($stock_id)
+	public static function ensure($stock_id, $price)
 	{
 		$stock_info = Request::stockQuery($stock_id);
-		$quotation = Request::stockInfo($stock_id, $stock_info['exchange_type']);
 
-		$price = $quotation['last_price'];
-		$enableBuyInfo = Request::tradeCount($stock_id, $stock_info['exchange_type'], $price);
+		//如果获取不到价格，那么使用传入的价格
+		$quotation = Request::stockInfo($stock_id, $stock_info['exchange_type'], false);
+		if(!empty($quotation))
+		{
+			$price = $quotation['last_price'];
+		}
+
+		$enableBuyInfo = null;
+		if(!empty($price))
+		{
+			$enableBuyInfo = Request::tradeCount($stock_id, $stock_info['exchange_type'], $price);
+		}
 
 		$result['stock_info'] = StockInfo::getStructInfo($stock_info);
 		$result['quotation'] = QuotationInfo::getStructInfo($quotation);

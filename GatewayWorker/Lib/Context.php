@@ -80,6 +80,12 @@ class Context
      * @var int
      */
     public static $route;
+
+	/**
+	 * 请求的参数签名
+	 * @var string
+	 */
+	public static $param_sign;
     /**
      * 编码 session
      *
@@ -113,7 +119,8 @@ class Context
     public static function clear()
     {
         self::$local_ip = self::$local_port = self::$client_ip = self::$client_port =
-        self::$client_id = self::$connection_id  = self::$old_session = self::$start_time = self::$route = null;
+        self::$client_id = self::$connection_id  = self::$old_session = self::$start_time =
+        self::$route = self::$param_sign = null;
     }
 
     /**

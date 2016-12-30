@@ -22,6 +22,7 @@ class UserFundInfo extends BaseInfo
 			'market_value' => '',                 //总市值
 			'asset_balance' => '',                //资产值，总资产
 			'income_balance' => '',                //浮动盈亏
+			'entrust_buy_balance' => '',           //委托买入金额
 		];
 	}
 }

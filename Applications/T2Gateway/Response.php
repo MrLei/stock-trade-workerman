@@ -23,6 +23,7 @@ class Response
 	public static function output($data)
 	{
 		$data['route'] = Context::$route;
+		$data['param_sign'] = Context::$param_sign;
 		$message = json_encode($data, JSON_UNESCAPED_UNICODE);
 		Gateway::sendToCurrentClient($message);
 

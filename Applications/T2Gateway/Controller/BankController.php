@@ -123,7 +123,7 @@ class BankController
 		$bank_no = Param::get($param, 'bank_no');
 		$action_in = Param::get($param, 'action_in');
 		$start_date = Param::get($param, 'start_date');
-		$end_date = Param::get($param, 'end_data');
+		$end_date = Param::get($param, 'end_date');
 		$position_str = Param::get($param, 'position_str', '');
 		$request_num = Param::get($param, 'request_num', 10);
 

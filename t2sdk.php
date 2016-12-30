@@ -7,14 +7,12 @@ $config = [
 ];
 
 $obj = new T2Connection($config);
-echo 123;
 var_dump($obj->p_connect());
-echo 345;
 var_dump($obj->p_login('70960283', '111111'));
 //var_dump($obj->p_login('70001172', '111111'));
 //var_dump($obj->p_req333001('dsf600036', '1', 18.1));
 //var_dump($obj->p_req330300('781724', '0', '', '', 1));
-//$data = $obj->p_req400('600036', '1');
+$data = $obj->p_req400('600036', '1');
 //var_dump($obj->p_req333002('000666', '2', '100', '19.1', '1', '0'));
 //var_dump($obj->p_req333140('600036', '1', 100, 18.1, '1', '0', 20160720, 20160720, '1'));
 //var_dump($obj->p_req333142(212, 20160713, ''));

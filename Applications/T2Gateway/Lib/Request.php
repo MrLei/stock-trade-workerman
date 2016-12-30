@@ -257,7 +257,7 @@ final class Request
 		$entrust_info = $conn->p_req332250($bank_no, $entrust_no, $action_in, $position_str, $request_num);
 
 		static::checkResult($entrust_info);
-		return $entrust_info[0];
+		return $entrust_info;
 	}
 
 

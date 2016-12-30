@@ -86,8 +86,9 @@ class TradeController
 		Param::judge($param, $must);
 
 		$stock_id = Param::get($param, 'stock_id');
+		$price = Param::get($param, 'price');
 
-		$stock_info = Trade::ensure($stock_id);
+		$stock_info = Trade::ensure($stock_id, $price);
 
 		$result['errcode'] = 0;
 		$result['result'] = $stock_info;
@@ -256,11 +257,11 @@ class TradeController
 	{
 		User::checkLogin();
 
-		$must = ['bank_no', 'entrust_no'];
+		$must = ['bank_no'];
 		Param::judge($param, $must);
 
 		$bank_no = Param::get($param, 'bank_no');
-		$entrust_no = Param::get($param, 'entrust_no');
+		$entrust_no = Param::get($param, 'entrust_no', 0);
 		$action_in = Param::get($param, 'action_in', 0);
 		$position_str = Param::get($param, 'position_str', '');
 		$request_num = Param::get($param, 'request_num', 10);
@@ -268,7 +269,7 @@ class TradeController
 		$entrust_info = Request::pollingEntrustNo($bank_no, $entrust_no, $action_in, $position_str, $request_num);
 
 		$result['errcode'] = SUCCESS;
-		$result['info'] = $entrust_info;
+		$result['list'] = $entrust_info;
 
 		Response::output($result);
 	}

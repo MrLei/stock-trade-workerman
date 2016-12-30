@@ -167,6 +167,29 @@ delist_flag 退市标志
 low_balance 交易最少金额
 high_balance 交易最高金额
 
+Applications\T2Gateway\Info\TodayTradeInfo
+字段 含义 备注
+serial_no 流水序号
+date 日期
+exchange_type 交易类别
+fund_account 资产账户
+stock_account 证券账号
+stock_code 证券代码
+stock_name 证券名称
+entrust_bs 买卖方向
+business_price 成交价格
+business_time 成交时间
+business_amount 成交数量
+real_type 成交类型
+real_status 处理标志
+business_balance 成交金额
+business_times 分笔成交笔数
+entrust_no 委托编号
+report_no 申请编号
+entrust_prop 委托属性
+business_no 成交编号
+position_str 定位串
+
 Applications\T2Gateway\Info\TradeInfo
 字段 含义 备注
 init_date 交易日期
